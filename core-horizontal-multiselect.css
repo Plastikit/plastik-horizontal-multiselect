@@ -9,6 +9,7 @@ polyfill-next-selector {
 }
 
 :host, ::content > core-item, ::content > paper-item {
+    background-color: #fff;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
@@ -29,6 +30,13 @@ polyfill-next-selector {
 
 ::content > core-item, ::content > paper-item {
     cursor: pointer;
+}
+
+polyfill-next-selector {
+    content: ':host > core-item';
+}
+
+::content > core-item {
     padding: 0 8px;
 }
 
@@ -60,8 +68,9 @@ polyfill-next-selector {
     -ms-flex-pack: center;
     -webkit-justify-content: center;
     justify-content: center;
-    background-color: #fff;
-    color: #212121;
+    color: #212121; /* Approximation of rgba(0, 0, 0, .87) on white */
+    color: rgba(0, 0, 0, .87);
+    font-weight: 400;
 }
 
 polyfill-next-selector {
@@ -69,8 +78,9 @@ polyfill-next-selector {
 }
 
 ::content > core-item.core-selected, ::content > paper-item.core-selected {
-    background-color: #009688;
+    background-color: #009688; /* Material Design Palette Teal 500 */
     color: #fff;
+    font-weight: 500;
 }
 
 core-item::shadow .button-content, paper-item::shadow .button-content {
