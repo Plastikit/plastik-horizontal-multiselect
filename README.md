@@ -8,7 +8,7 @@ controls](http://i.imgur.com/kWMxW0X.png) in the new Google Maps Android app.
 
 Demos and documentation are available on the [component page](https://vsimonian.github.io/polymer-elements/components/core-horizontal-multiselect/).
 
-Pull requests are always welcome. If you encounter any bugs, please feel free to [submit an issue](issues/new/).
+Pull requests are always welcome. If you encounter any bugs, please feel free to [submit an issue](https://github.com/vsimonian/core-horizontal-multiselect/issues/new/).
 
 ## Installation
 
