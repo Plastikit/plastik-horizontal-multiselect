@@ -13,7 +13,7 @@ Pull requests are always welcome. If you encounter any bugs, please feel free to
 ## Installation
 
 ```sh
-bower install vsimonian/plastik-horizontal-multiselect --save
+bower install Plastikit/plastik-horizontal-multiselect --save
 ```
 ## Basic usage
 
