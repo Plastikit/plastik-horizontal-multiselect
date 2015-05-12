@@ -3,7 +3,6 @@
 
 <!--
 plastik-horizontal-multiselect is a horizontal, multi-selectable listbox with support for reset items.
-It was inspired by the filter options in the new Google Maps Android app.
 
 ##### Example
 
@@ -28,8 +27,8 @@ It was inspired by the filter options in the new Google Maps Android app.
     <script>
         Polymer('plastik-horizontal-multiselect', {
             /**
-             * The `selected` property gets or sets the array of currently selected values. If `single` is true, 
-             * `selected` will return a single value, not an array.
+             * Gets or sets the array of currently selected values. If `single` is true, gets or sets
+             * a single value instead of an array.
              *
              * @attribute selected
              * @type Object
@@ -38,7 +37,7 @@ It was inspired by the filter options in the new Google Maps Android app.
             selected: { value: null, reflect: true },
             
             /**
-             * The `valueattr` property gets or sets the attribute to use when referencing an item's value.
+             * Gets or sets the name of the attribute to use when referencing an item's value.
              * 
              * @attribute valueattr
              * @type String
@@ -47,7 +46,7 @@ It was inspired by the filter options in the new Google Maps Android app.
              valueattr: 'value',
              
             /**
-             * The `required` property gets or sets whether or not the element must have at least one item selected at all times.
+             * If true, at least one item must be selected at all times.
              * 
              * @attribute required
              * @type bool
@@ -56,7 +55,7 @@ It was inspired by the filter options in the new Google Maps Android app.
             required: false,
             
             /**
-             * If the `single` is set to true, the element will only allow a single item to be selected at a time.
+             * If true, only a single item can be selected at a time.
              *
              * @attribute single
              * @type bool
@@ -74,7 +73,7 @@ It was inspired by the filter options in the new Google Maps Android app.
             
 
             /**
-             * The `clearSelection` method deselects all items.
+             * Deselects all items.
              *
              * @method clearSelection
              * @param {Array} exclusions (optional) A list of values of items to exclude from deselection.
