@@ -1,8 +1,8 @@
 {
-  "name": "core-horizontal-multiselect",
+  "name": "plastik-horizontal-multiselect",
   "version": "0.0.1",
   "authors": [
-    "Vartan Simonian <vsimonianpress@gmail.com>"
+    "Plastikit Authors <vsimonianpress@gmail.com>"
   ],
   "description": "Horizontal selectable listbox with multiselect and default item capabilities.",
   "keywords": [
@@ -14,9 +14,9 @@
     "menu",
     "item"
   ],
-  "main": "core-horizontal-multiselect.html",
+  "main": "plastik-horizontal-multiselect.html",
   "license": "BSD-3-Clause",
-  "homepage": "https://github.com/vsimonian/core-horizontal-multiselect/",
+  "homepage": "https://github.com/vsimonian/plastik-horizontal-multiselect/",
   "ignore": [
     "/.*",
     "/tests/"

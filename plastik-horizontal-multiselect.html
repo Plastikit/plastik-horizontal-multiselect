@@ -2,31 +2,31 @@
 <link rel="import" href="../core-selector/core-selector.html">
 
 <!--
-core-horizontal-multiselect is a horizontal, multi-selectable listbox with support for reset items.
+plastik-horizontal-multiselect is a horizontal, multi-selectable listbox with support for reset items.
 It was inspired by the filter options in the new Google Maps Android app.
 
 ##### Example
 
-    <core-horizontal-multiselect>
+    <plastik-horizontal-multiselect>
         <core-item reset>Any</core-item>
         <core-item value="0">Free</core-item>
         <core-item value="1-100">$1 - $100</core-item>
         <core-item value="101-500">$101 - $500</core-item>
         <core-item value="501+">$501+</core-item>
-    </core-horizontal-multiselect>
+    </plastik-horizontal-multiselect>
 
-@element core-horizontal-multiselect
+@element plastik-horizontal-multiselect
 @blurb Horizontal, multi-selectable listbox with support for reset items.
 @status alpha
-@homepage https://github.com/vsimonian/core-horizontal-multiselect
+@homepage https://github.com/vsimonian/plastik-horizontal-multiselect
 -->
-<polymer-element name="core-horizontal-multiselect" attributes="single selected valueattr required" extends="core-selector">
+<polymer-element name="plastik-horizontal-multiselect" attributes="single selected valueattr required" extends="core-selector">
     <template>
-        <link rel="stylesheet" href="core-horizontal-multiselect.css">
+        <link rel="stylesheet" href="plastik-horizontal-multiselect.css">
         <shadow></shadow>
     </template>
     <script>
-        Polymer('core-horizontal-multiselect', {
+        Polymer('plastik-horizontal-multiselect', {
             /**
              * The `selected` property gets or sets the array of currently selected values. If `single` is true, 
              * `selected` will return a single value, not an array.

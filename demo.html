@@ -2,14 +2,14 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
-    <title>core-horizontal-multiselect Demo</title>
+    <title>plastik-horizontal-multiselect Demo</title>
   
     <script src="../webcomponentsjs/webcomponents.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro" />
     <link rel="import" href="../core-item/core-item.html" />
     <link rel="import" href="../paper-item/paper-item.html" />
     <link rel="import" href="../font-roboto/roboto.html" />
-    <link rel="import" href="core-horizontal-multiselect.html" />
+    <link rel="import" href="plastik-horizontal-multiselect.html" />
         
     <style type="text/css">
         html {
@@ -80,21 +80,21 @@
     
         <h3>With reset option:</h3>
         
-        <pre>&lt;core-horizontal-multiselect style=&quot;max-width: 480px&quot;&gt;
+        <pre>&lt;plastik-horizontal-multiselect style=&quot;max-width: 480px&quot;&gt;
     &lt;core-item reset&gt;Any&lt;/core-item&gt;
     &lt;core-item value=&quot;free&quot;&gt;Free&lt;/core-item&gt;
     &lt;core-item value=&quot;tier1&quot;&gt;$1 - $100&lt;/core-item&gt;
     &lt;core-item value=&quot;tier2&quot;&gt;$101 - $500&lt;/core-item&gt;
     &lt;core-item value=&quot;tier3&quot;&gt;$501+&lt;/core-item&gt;
-&lt;/core-horizontal-multiselect&gt;</pre>
+&lt;/plastik-horizontal-multiselect&gt;</pre>
     
-        <core-horizontal-multiselect style="max-width: 480px" selected="{{selected1}}" on-core-select="{{update}}">
+        <plastik-horizontal-multiselect style="max-width: 480px" selected="{{selected1}}" on-core-select="{{update}}">
             <core-item reset>Any</core-item>
             <core-item value="free">Free</core-item>
             <core-item value="tier1">$1 - $100</core-item>
             <core-item value="tier2">$101 - $500</core-item>
             <core-item value="tier3">$501+</core-item>
-        </core-horizontal-multiselect>
+        </plastik-horizontal-multiselect>
         
         <p>Selected <span class="{{selectionStyle1}}">{{selection1}}</span>.</p>
         
@@ -102,19 +102,19 @@
     
         <h3>Without reset option, value required:</h3>
         
-        <pre>&lt;core-horizontal-multiselect required selected=&quot;free&quot;&gt;
+        <pre>&lt;plastik-horizontal-multiselect required selected=&quot;free&quot;&gt;
     &lt;core-item value=&quot;free&quot;&gt;Free&lt;/core-item&gt;
     &lt;core-item value=&quot;tier1&quot;&gt;$1 - $100&lt;/core-item&gt;
     &lt;core-item value=&quot;tier2&quot;&gt;$101 - $500&lt;/core-item&gt;
     &lt;core-item value=&quot;tier3&quot;&gt;$501+&lt;/core-item&gt;
-&lt;/core-horizontal-multiselect&gt;</pre>
+&lt;/plastik-horizontal-multiselect&gt;</pre>
     
-        <core-horizontal-multiselect required selected="{{selected2}}" on-core-select="{{update}}">
+        <plastik-horizontal-multiselect required selected="{{selected2}}" on-core-select="{{update}}">
             <core-item value="free">Free</core-item>
             <core-item value="tier1">$1 - $100</core-item>
             <core-item value="tier2">$101 - $500</core-item>
             <core-item value="tier3">$501+</core-item>
-        </core-horizontal-multiselect>
+        </plastik-horizontal-multiselect>
         
         <p>Selected <span class="{{selectionStyle2}}">{{selection2}}</span>.</p>
         
@@ -122,19 +122,19 @@
     
         <h3>Single selection:</h3>
         
-        <pre>&lt;core-horizontal-multiselect single selected=&quot;free&quot;&gt;
+        <pre>&lt;plastik-horizontal-multiselect single selected=&quot;free&quot;&gt;
     &lt;core-item value=&quot;free&quot;&gt;Free&lt;/core-item&gt;
     &lt;core-item value=&quot;tier1&quot;&gt;$1 - $100&lt;/core-item&gt;
     &lt;core-item value=&quot;tier2&quot;&gt;$101 - $500&lt;/core-item&gt;
     &lt;core-item value=&quot;tier3&quot;&gt;$501+&lt;/core-item&gt;
-&lt;/core-horizontal-multiselect&gt;</pre>
+&lt;/plastik-horizontal-multiselect&gt;</pre>
     
-        <core-horizontal-multiselect single selected="{{selected3}}" on-core-select="{{update}}">
+        <plastik-horizontal-multiselect single selected="{{selected3}}" on-core-select="{{update}}">
             <core-item value="free">Free</core-item>
             <core-item value="tier1">$1 - $100</core-item>
             <core-item value="tier2">$101 - $500</core-item>
             <core-item value="tier3">$501+</core-item>
-        </core-horizontal-multiselect>
+        </plastik-horizontal-multiselect>
         
         <p>Selected <span class="{{selectionStyle3}}">{{selection3}}</span>.</p>
         
@@ -142,21 +142,21 @@
     
         <h3>With reset option, using paper-item:</h3>
         
-        <pre>&lt;core-horizontal-multiselect style=&quot;max-width: 480px&quot;&gt;
+        <pre>&lt;plastik-horizontal-multiselect style=&quot;max-width: 480px&quot;&gt;
     &lt;paper-item reset&gt;Any&lt;/paper-item&gt;
     &lt;paper-item value=&quot;free&quot;&gt;Free&lt;/paper-item&gt;
     &lt;paper-item value=&quot;tier1&quot;&gt;$1 - $100&lt;/paper-item&gt;
     &lt;paper-item value=&quot;tier2&quot;&gt;$101 - $500&lt;/paper-item&gt;
     &lt;paper-item value=&quot;tier3&quot;&gt;$501+&lt;/paper-item&gt;
-&lt;/core-horizontal-multiselect&gt;</pre>
+&lt;/plastik-horizontal-multiselect&gt;</pre>
     
-        <core-horizontal-multiselect style="max-width: 480px" selected="{{selected4}}" on-core-select="{{update}}">
+        <plastik-horizontal-multiselect style="max-width: 480px" selected="{{selected4}}" on-core-select="{{update}}">
             <paper-item reset>Any</paper-item>
             <paper-item value="free">Free</paper-item>
             <paper-item value="tier1">$1 - $100</paper-item>
             <paper-item value="tier2">$101 - $500</paper-item>
             <paper-item value="tier3">$501+</paper-item>
-        </core-horizontal-multiselect>
+        </plastik-horizontal-multiselect>
         
         <p>Selected <span class="{{selectionStyle4}}">{{selection4}}</span>.</p>
         

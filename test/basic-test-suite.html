@@ -4,23 +4,23 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
-    <title>core-horizontal-multiselect</title>
+    <title>plastik-horizontal-multiselect</title>
     <script src="../../webcomponentsjs/webcomponents.min.js"></script>
     <script src="../../web-component-tester/browser.js"></script>
     <link rel="import" href="../../core-item/core-item.html">
-    <link rel="import" href="../core-horizontal-multiselect.html">
+    <link rel="import" href="../plastik-horizontal-multiselect.html">
   </head>
   
   <body>
-    <core-horizontal-multiselect>
+    <plastik-horizontal-multiselect>
       <core-item reset>Any</core-item>
       <core-item value="tier1">Free</core-item>
       <core-item value="tier2">$1 - $100</core-item>
       <core-item value="tier3">$101 - $500</core-item>
       <core-item value="tier4">$501+</core-item>
-    </core-horizontal-multiselect>
+    </plastik-horizontal-multiselect>
     <script>
-      var multiselect = document.querySelector('core-horizontal-multiselect');
+      var multiselect = document.querySelector('plastik-horizontal-multiselect');
       
       function selectorShouldExist(selector) {
           assert.ok(multiselect.querySelector(selector), selector);
@@ -30,7 +30,7 @@
           assert.notOk(multiselect.querySelector(selector), selector);
       }
   
-      suite('<core-horizontal-multiselect>', function() {
+      suite('<plastik-horizontal-multiselect>', function() {
   
         test('`selected` is an empty array when element is initialized', function() {
           assert.deepEqual(multiselect.selected, []);
@@ -104,7 +104,7 @@
           });
         });
         
-        test('core-horizontal-multiselect.clearSelection() clears selected values successfully', function(done) {
+        test('plastik-horizontal-multiselect.clearSelection() clears selected values successfully', function(done) {
           multiselect.selected = ['tier1', 'tier2', 'tier3'];
           flush(function () {
             multiselect.clearSelection();
@@ -116,7 +116,7 @@
           });
         });
         
-        test('core-horizontal-multiselect.clearSelection(exclusions) excludes requested items successfully', function(done) {
+        test('plastik-horizontal-multiselect.clearSelection(exclusions) excludes requested items successfully', function(done) {
           multiselect.selected = ['tier1', 'tier2', 'tier3'];
           flush(function () {
             multiselect.clearSelection(['tier2']);
@@ -128,7 +128,7 @@
           });
         });
         
-        test('core-horizontal-multiselect.clearSelection(exclusions) clears selected values successfully, even when passed invalid values', function(done) {
+        test('plastik-horizontal-multiselect.clearSelection(exclusions) clears selected values successfully, even when passed invalid values', function(done) {
           multiselect.selected = ['tier1', 'tier2', 'tier3'];
           flush(function () {
             multiselect.clearSelection(['abcd1234']);
