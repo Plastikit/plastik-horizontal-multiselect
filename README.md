@@ -1,7 +1,7 @@
 plastik-horizontal-multiselect
 ============
 
-**This element is only compatible with Polymer 0.5.x. At the moment, there is no equivalent for Polymer 0.8.x.**
+**This element is DEPRECATED. It is only compatible with Polymer 0.5.x. For a version compatible with Polymer 0.9.x and higher, see [`plastik-option-list`](https://github.com/Plastikit/plastik-option-list).**
 
 plastik-horizontal-multiselect is a horizontal, multi-selectable listbox with support for reset items. It was inspired by the [filter
 controls](http://i.imgur.com/kWMxW0X.png) in the new Google Maps Android app.
